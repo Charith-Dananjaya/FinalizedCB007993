@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".ProductDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/prod_details_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:text="Product Name"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/prod_details_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/cart_items_bg"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:src="@drawable/email_icon">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/prod_details_cate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Product Category"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/prod_details_scate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:text="Product Name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/prod_details_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:text="Product Price"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/prod_details_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Product Description"
+            android:fontFamily="serif"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="serif"
+                android:text="Size"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/prod_details_sp_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+
+            <TextView
+                android:id="@+id/prod_details_aqty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:fontFamily="serif"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_weight="4"
+                android:text="Quantity"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/prod_details_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:layout_weight="6"
+                android:inputType="number" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/prod_details_btn_add"
+            android:layout_width="196dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:background="@drawable/btn_background"
+            android:fontFamily="serif"
+            android:text="Add To Cart"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

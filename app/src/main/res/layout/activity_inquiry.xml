@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    >
+
+
+    <LinearLayout
+        android:layout_width="382dp"
+        android:layout_height="695dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Inquiry"
+            android:textColor="@color/white"
+            android:textSize="50dp" />
+
+
+        <EditText
+            android:id="@+id/inquiry_subject"
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/login_edit_text"
+            android:drawableStart="@drawable/email_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Subject"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/HintColor"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/inquiry_messasge"
+            android:layout_width="356dp"
+            android:layout_height="310dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/login_edit_text"
+            android:drawableStart="@drawable/inquiry_message_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter your Inquiry here"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/HintColor"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/inquiry_btn_submit"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_background"
+            android:text="Submit Inquiry"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/inquiry_btn_call"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_background"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:text="Contact Us" />
+
+        <Button
+            android:id="@+id/inquiry_btn_cancel"
+            android:layout_width="124dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_background"
+            android:text="cancel" />
+    </LinearLayout>
+
+
+</RelativeLayout>
